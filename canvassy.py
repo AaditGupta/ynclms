@@ -1,13 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
+from flask.ext.bootstrap import Bootstrap
 
 app = Flask(__name__)
+bootstrap = Bootstrap(app)
 
 
 @app.route('/')
-def index(name):
+def index():
     return render_template('index.html')
 
-def 
 
 
 if __name__ == '__main__':
