@@ -16,17 +16,21 @@
 {% block navbar %}
 <div class="navbar navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <div class="headerLogo">
-                <a class="titleA" href="/"><p class="CanvassyName">CANVASSY</p></a>
-                <a class="titleA" href="/"><p class="YNCName"><font color="#002c6a">YALE</font><font color="#ff8100">NUS</font><font color="#002c6a">COLLEGE</font></p></a>
-
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="headerLogo">
+                        <a class="titleA" href="/"><p class="CanvassyName">CANVASSY</p></a>
+                        <a class="titleA" href="/"><p class="YNCName"><font color="#002c6a">YALE</font><font color="#ff8100">NUS</font><font color="#002c6a">COLLEGE</font></p></a>
+                </div>
+            </div>
+            <div class="col-xs-5"></div>
+            <div class="col-xs-1">
+                <div class="userSection">
+                    <a href="/" id="profilePicLink"><img class="round" id="profilePic" src="/static/Raubs.png"></a>
+                    <a href="/"><p id="userName">TheRaubz</p></a>
+                </div>
+            </div>
         </div>
-        <div class="userSection">
-            <a href="/" id="profilePicLink"><img class="round" id="profilePic" src="/static/Raubs.png"></a>
-            <a href="/"><p id="userName">TheRaubz</p></a>
-
-        </div>
-
    </div>
     <div id="topBlue"></div>
     <div id="topOrange"></div>
