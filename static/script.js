@@ -7,7 +7,8 @@ $(window).scroll(function () {
         $('.CanvassyName').css('margin-bottom', '-30px');
         $('#userName').css('font-size', '0px');
         //$('.userSection').css('height', '0px');
-        //$('#profilePicLink').css('visibility: hidden');
+        $('#profilePicLink').css('margin-top', '-15px');
+        $('#profilePic').css('margin-top', '10px');
     } else {
         $('nav').removeClass('shrink');
         $('.YNCName').css('font-size', '15pt');
