@@ -3,7 +3,7 @@
 }
 
 .container {
-    /*margin-bottom: 0px;*/
+    margin-bottom: 0px;
 }
 
 .icon-bar {
@@ -15,7 +15,10 @@
     width: 350px;
     /*margin-left: auto;*/
     margin: 30px auto 30px 0;
+}
 
+.row {
+    padding: 10px;
 }
 
 a {
@@ -52,7 +55,7 @@ a:hover {
     background-color:#002c6a;
 }
 #topOrange {
-    height:3px;
+    height:2px;
     width: 100%;
     background-color:#ff8100;
 }
@@ -78,6 +81,11 @@ a:hover {
     text-align: center;
     font-family: 'Abel', sans-serif;
     font-size:12px;
+}
+
+#navbarContainer {
+    margin-bottom:197px;
+    transition: margin-bottom 0.2s;
 }
 
 /*Tools*/

@@ -14,36 +14,50 @@
 {% endblock %}
 
 {% block navbar %}
-<div class="navbar navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-6">
-                <div class="headerLogo">
-                        <a class="titleA" href="/"><p class="CanvassyName">CANVASSY</p></a>
-                        <a class="titleA" href="/"><p class="YNCName"><font color="#002c6a">YALE</font><font color="#ff8100">NUS</font><font color="#002c6a">COLLEGE</font></p></a>
+<div class="container" id="navbarContainer">
+    <div class="navbar navbar-fixed-top" role="navigation" style="background-color:#F0F0F0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="headerLogo">
+                            <a class="titleA" href="/"><p class="CanvassyName">CANVASSY</p></a>
+                            <a class="titleA" href="/"><p class="YNCName"><font color="#002c6a">YALE</font><font color="#ff8100">NUS</font><font color="#002c6a">COLLEGE</font></p></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-5"></div>
-            <div class="col-xs-1">
-                <div class="userSection">
-                    <a href="/" id="profilePicLink"><img class="round" id="profilePic" src="/static/Raubs.png"></a>
-                    <a href="/"><p id="userName">TheRaubz</p></a>
+                <div class="col-xs-5"></div>
+                <div class="col-xs-1">
+                    <div class="userSection">
+                        <a href="/" id="profilePicLink"><img class="round" id="profilePic" src="/static/Raubs.png"></a>
+                        <a href="/"><p id="userName">TheRaubz</p></a>
+                    </div>
                 </div>
             </div>
         </div>
-   </div>
-    <div id="topBlue"></div>
-    <div id="topOrange"></div>
+        <div id="topBlue" style="position:relative; top:1px;"></div>
+        <div id="topOrange" style="position:relative; top:1px;"></div>
+    </div>
 </div>
+<div class="container" style="position:relative;">
+    <div class="row">
+        <div class="col-xs-12" style="height:615px; background-color:#0E4C92; border-radius:4px;"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-7" style="height:300px; padding:0px; padding-right:10px;">
+            <div style="background-color:#EF7C00; height:100%; border-radius:4px;"></div>
+        </div>
+        <div class="col-xs-5" style="height:300px; padding:0px; padding-left:10px;">
+            <div style="background-color:#F0F0F0; height:100%; width:100%; border-radius:4px;"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" style="height:615px; background-color:#0E4C92; border-radius:4px;"></div>
+    </div>
+</div>
+<div style="height:9px; position:relative;"></div>
 
 {% endblock %}
 
 {% block body %}
 {{ super() }}
-<div style="height:1000px;"></div>
+
 {% endblock %}
-
-<body>
-<p class="yncheader"></p>
-
-</body>
