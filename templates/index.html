@@ -37,35 +37,16 @@
         <div id="topOrange" style="position:relative; top:1px;"></div>
     </div>
 </div>
-<!--<div class="container" style="position:relative;">
-    <div class="row">
-        <div class="col-xs-12" style="height:615px; background-color:#0E4C92; border-radius:4px;"></div>
-    </div>
-    <div class="row">
-        <div class="col-xs-7" style="height:300px; padding:0px; padding-right:10px;">
-            <div style="background-color:#EF7C00; height:100%; border-radius:4px;"></div>
-        </div>
-        <div class="col-xs-5" style="height:300px; padding:0px; padding-left:10px;">
-            <div style="background-color:#F0F0F0; height:100%; width:100%; border-radius:4px;"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12" style="height:615px; background-color:#0E4C92; border-radius:4px;"></div>
-    </div>
-</div>
-<div style="height:9px; position:relative;"></div>-->
 
 {% endblock %}
 
 {% block body %}
 {{ super() }}
-
     <div class="col-xs-2" id="navigationPane">
-        <p style="color:#ff8100">CLASSES</p>
-        <p style="color:#002c6a">PPT</p>
-        <p style="color:#002c6a">CSI</p>
-        <p style="color:#002c6a">LH</p>
-        <p style="color:#002c6a">SI</p>
+        <div class="sidebarTitle">CLASSES</div>
+        <div class="tag">PPT</div>
+        <div class="tag">LH</div>
+        <div class="tag">CSI</div>
     </div>
 
     <div class="col-xs-10" style="float:right;">
@@ -82,4 +63,17 @@
     </div>
 
     <div style="height:1000px;"></div>
+
+    <div class="col-xs-10" style="float:right;">
+
+            <div class="col-xs-6" style="padding:5px; padding-right:10px;">
+                <div class="content" style="height:200px; background-color:#ff8100;"></div>
+                <div class="content" style="height:500px; background-color:#002c6a;"></div>
+            </div>
+            <div class="col-xs-6" style="padding:5px;padding-left:10px;">
+                <div class="content" style="height:400px; background-color:#002c6a;"></div>
+                <div class="content" style="height:600px; background-color:#ff8100;"></div>
+            </div>
+
+    </div>
 {% endblock %}
