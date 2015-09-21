@@ -50,35 +50,30 @@
     </div>
 
     <div class="col-xs-10" style="float:right;">
-        {% set i=1 %}
-        {% for title in posters.titles %}
-            <div class="col-xs-6" style="padding:5px; padding-right:10px;">
-            {% if i%2 != 0 %}
-                <div class="content" style="height:200px; background-color:#ff8100;">{{title}}</div>
-            {% endif %}
-            </div>
-            <div class="col-xs-6" style="padding:5px;padding-left:10px;">
-            {% if i%2 == 0 %}
-                <div class="content" style="height:200px; background-color:#002c6a;">{{title}}</div>
-            {% endif %}
-            </div>
-            {% set i = i+1 %}
-        {% endfor %}
-
+        {% set i = 1 %}
+        <div class="col-md-6" style="padding:5px; padding-right:10px;">
+            {% for i in range(4) %}
+                {% if i%2 != 0 %}
+                    <div class="content"> <!--#ff8100-->
+                        <div class="contentTitle" style="background-color:{{['#ff8100', '#002c6a']|random}};">{{posters.titles[i]}}</div>
+                        <div class="contentImgContainer"><img class="contentImg" src="{{posters.imgs[i]}}"></div>
+                    </div>
+                {% endif %}
+                {% set i = i+1 %}
+            {% endfor %}
+        </div>
+        <div class="col-md-6" style="padding:5px; padding-left:10px;">
+            {% for i in range(4) %}
+                {% if i%2 == 0 %}
+                    <div class="content"> <!--#002c6a;-->
+                        <div class="contentTitle" style="background-color:{{['#ff8100', '#002c6a']|random}};">{{posters.titles[i]}}</div>
+                        <div class="contentImgContainer"><img class="contentImg" src="{{posters.imgs[i]}}"></div>
+                    </div>
+                {% endif %}
+                {% set i = i+1 %}
+            {% endfor %}
+        </div>
     </div>
 
     <div style="height:1000px;"></div>
-
-    <div class="col-xs-10" style="float:right;">
-
-            <div class="col-xs-6" style="padding:5px; padding-right:10px;">
-                <div class="content" style="height:200px; background-color:#ff8100;"></div>
-                <div class="content" style="height:500px; background-color:#002c6a;"></div>
-            </div>
-            <div class="col-xs-6" style="padding:5px;padding-left:10px;">
-                <div class="content" style="height:400px; background-color:#002c6a;"></div>
-                <div class="content" style="height:600px; background-color:#ff8100;"></div>
-            </div>
-
-    </div>
 {% endblock %}

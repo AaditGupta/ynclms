@@ -77,6 +77,25 @@ a {
     background-color: #B0B0B0;
 }
 
+.contentTitle {
+    font-family: 'Abel', sans-serif;
+    font-size: 20pt;
+    color: white;
+    padding: 15px;
+    padding-left: 35px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.contentImgContainer {
+
+}
+
+.contentImg {
+    max-height:100%;
+    max-width:100%;
+}
+
 a:hover {
     text-decoration: none;
 }
