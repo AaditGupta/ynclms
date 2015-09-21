@@ -22,7 +22,7 @@ $(window).scroll(function () {
         $('#userName').css('font-size', '12px');
         $('#profilePic').css('margin-top', '40px');
         $('#profilePic').css('width', '50px');
-        $('#navbarContainer').css('margin-bottom', '197px');
+        $('#navbarContainer').css('margin-bottom', '200px');
         $('#navigationPane').css('padding-top', '200px');
     }
 });

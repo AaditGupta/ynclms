@@ -10,6 +10,11 @@
     background-color: black;
 }
 
+.content {
+    margin-bottom:20px;
+    border-radius:4px;
+}
+
 .headerLogo {
     float: left;
     width: 350px;
@@ -84,7 +89,7 @@ a:hover {
 }
 
 #navbarContainer {
-    margin-bottom:197px;
+    margin-bottom:200px;
     transition: margin-bottom 0.2s;
 }
 
