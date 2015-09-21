@@ -12,6 +12,7 @@ $(window).scroll(function () {
         $('#profilePic').css('margin-top', '10px');
         $('#profilePic').css('width', '35px');
         $('#navbarContainer').css('margin-bottom', '50px');
+        $('#navigationPane').css('padding-top', '100px');
     } else {
         //$('nav').removeClass('shrink');
         $('.YNCName').css('font-size', '12pt');
@@ -22,5 +23,6 @@ $(window).scroll(function () {
         $('#profilePic').css('margin-top', '40px');
         $('#profilePic').css('width', '50px');
         $('#navbarContainer').css('margin-bottom', '197px');
+        $('#navigationPane').css('padding-top', '200px');
     }
 });

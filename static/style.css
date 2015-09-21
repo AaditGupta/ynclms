@@ -69,7 +69,6 @@ a:hover {
 
 #profilePicLink {
     margin: 0 auto 0 auto;
-
 }
 
 #profilePic {
@@ -87,6 +86,16 @@ a:hover {
 #navbarContainer {
     margin-bottom:197px;
     transition: margin-bottom 0.2s;
+}
+
+#navigationPane {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background-color: #E0E0E0;
+    padding-top: 200px;
+    transition: padding-top 0.2s;
 }
 
 /*Tools*/
